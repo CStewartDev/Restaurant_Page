@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#content {
+    background: url('./images/wallpaper.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+nav {
+    height: 5rem;
+    font-size: 2em;
+    color: #6ee1ef;
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+nav ul {
+    display: flex;
+    /* justify-content:flex-end; */
+    align-items: center;
+    list-style: none;
+}
+
+.navSel {
+    list-style: none;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0 1em
+}
+
+.navSel:hover {
+    border-bottom: .2em solid #6ee1ef;
+    cursor: pointer;
+}
+
+.navIcon {
+    padding-right: 2em;
+    transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+    cursor: pointer;
+}
+
+.navIcon:hover {
+    transform: rotate(360deg);
+}
+
+.navName {
+    font-size: inherit;
+    text-transform: uppercase;
+}
