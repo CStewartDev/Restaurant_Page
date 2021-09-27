@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #content {
@@ -21,12 +21,12 @@ nav {
     font-family: 'Fredoka One', cursive;
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
+    align-items: center;
+    text-shadow: 2px 2px 2px #ffd241; 
 }
 
 nav ul {
     display: flex;
-    /* justify-content:flex-end; */
     align-items: center;
     list-style: none;
 }
@@ -36,11 +36,12 @@ nav ul {
     font-family: 'Fredoka One', cursive;
     font-size: 2em;
     text-transform: uppercase;
-    margin: 0 1em
+    margin: .5em 1em;
 }
 
 .navSel:hover {
-    border-bottom: .2em solid #6ee1ef;
+    /* border-bottom: .2em solid #6ee1ef; */
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -55,6 +56,7 @@ nav ul {
 }
 
 .navName {
-    font-size: inherit;
+    font-size: 1.25em;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
