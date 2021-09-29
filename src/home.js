@@ -1,7 +1,7 @@
 import icecream from "./images/two-scoop.png"
 import { createHtmlElement } from "./createElHelper";
 
-const render = (page)=>{
+const render = ()=>{
     const home = document.createElement('main');
     
     let h2One = createHtmlElement('h2',null,["h2One"],"When one scoop is not enough, there's:")

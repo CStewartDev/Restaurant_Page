@@ -6,8 +6,9 @@ import {renderHome} from './home'
 import { renderMenu } from './menu'
 import { renderAbout } from './about'
 
-const pageContent = document.getElementById('content');
+const pageContent = createHtmlElement("div","content",null,null)
 
+document.body.append(pageContent)
 
 function pageRender(target) {
     if(target === "home") {
@@ -16,16 +17,15 @@ function pageRender(target) {
     }
     if(target === "menu") {
         pageContent.innerText = "";
-        pageContent.append(renderNav(),renderFooter())
+        pageContent.append(renderNav(),renderMenu(),renderFooter())
     }
     if(target === "about") {
         pageContent.innerText = "";
-        pageContent.append(renderNav(),renderFooter())
+        pageContent.append(renderNav(),renderAbout(),renderFooter())
     }
 }
 
 pageContent.addEventListener("click", e=>{
     if(e.target.textContent === "home" || "about" || "menu") pageRender(e.target.textContent)
 })
-
 pageRender("home")

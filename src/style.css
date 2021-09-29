@@ -8,13 +8,16 @@
     font-family: 'Fredoka One', cursive;
 }
 
-#content {
+body{
     background: url('./images/wallpaper.jpg');
-    height: 100vh;
-    width: 100vw;
     background-size: cover;
     background-position: center;
-    /* overflow: hidden; */
+    background-attachment: fixed;
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,11 +94,12 @@ footer a {
     padding-left: 1em;
 }
 
-/* Home */
+/* Home & About */
 
 main {
     display: flex;
     justify-content: center;
+    width: 90vw;
     align-items: center;
     flex-direction: column;
     padding-bottom: 15vh;
