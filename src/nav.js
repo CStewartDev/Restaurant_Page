@@ -11,7 +11,7 @@ const render = () =>{
 
     const navName = createHtmlElement("h1",null,["navName"],"The Double Scoop");
 
-    nav.appendChild(navName);
+    // nav.appendChild(navName);
 
     const myIcon = new Image();
     myIcon.src = icecream;

@@ -14,23 +14,24 @@
     width: 100vw;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
+
+
 /* NAV */
 nav {
     height: 5rem;
     width: 100vw;
     font-size: 2em;
     color: #6ee1ef;
-    
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    text-shadow: 2px 2px 2px #ffd241;
+    text-shadow: 2px 2px 2px #d80065;
     position:sticky;
     top: 0; 
 }
@@ -41,21 +42,25 @@ nav ul {
     list-style: none;
 }
 
+.navSel:hover {
+    border-color: #6ee1ef;
+    box-shadow: 2px 2px 1px #d80065;
+    cursor: pointer;
+}
+
 .navSel {
     list-style: none;
     font-size: 2em;
     text-transform: uppercase;
     margin: .5em 1em;
+    padding: .3em;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
-.navSel:hover {
-    /* border-bottom: .2em solid #6ee1ef; */
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .navIcon {
-    padding-right: 2em;
+    margin: 2em;
     transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
     cursor: pointer;
 }
@@ -67,6 +72,7 @@ nav ul {
 .navName {
     font-size: 1.25em;
     text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
     letter-spacing: 3px;
 }
 
@@ -91,7 +97,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    padding-bottom: 15vh;
 }
 
 main h2 {
@@ -99,6 +106,18 @@ main h2 {
     font-size: 2em;
     color: #6ee1ef;
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px #d80065;
+    text-shadow: 3px 3px 2px #d80065, 3px 3px 3px #59055b;
     margin: .5em 1em;
 }
+
+.h2Two {
+    font-size: 4em;
+    font-family: 'Press Start 2P', cursive;;
+}
+
+.icon {
+    height: 256px;
+    width: 256px;
+    padding-left: 1rem;
+}
+
