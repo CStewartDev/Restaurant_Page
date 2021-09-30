@@ -9,10 +9,7 @@
 }
 
 body{
-    background: url('./images/wallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background:url('./images/wallpaper.jpg') fixed center / cover ;
 }
 
 #content {
@@ -35,8 +32,6 @@ nav {
     justify-content: space-between; 
     align-items: center;
     text-shadow: 2px 2px 2px #d80065;
-    position:sticky;
-    top: 0; 
 }
 
 nav ul {
@@ -94,7 +89,7 @@ footer a {
     padding-left: 1em;
 }
 
-/* Home & About */
+/* Home, About, and Menu */
 
 main {
     display: flex;
@@ -102,7 +97,7 @@ main {
     width: 90vw;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 15vh;
+    padding-bottom: 5vh;
 }
 
 main h2 {
@@ -125,3 +120,44 @@ main h2 {
     padding-left: 1rem;
 }
 
+/* Menu */
+
+#menu-ul{
+    color: #6ee1ef;
+    text-shadow: 3px 3px 2px #d80065, 3px 3px 3px #59055b;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-items: center;
+    gap: 5rem 5rem;
+}
+
+.flavor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    word-wrap: break-word;
+    padding: 1em;
+    list-style: none;
+}
+
+.f-desc{
+    padding-bottom: 1em;
+}
+
+#menu-ul h3{
+    font-size: 2em;
+    padding-bottom: 1rem;
+}
+
+li img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+#guar {
+    font-size: .75em;
+    color: lightsteelblue;
+    padding-top: 10vh;
+}
